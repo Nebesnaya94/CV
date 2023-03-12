@@ -76,6 +76,7 @@ h3 {
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    cursor: default;
 }
 
 .contacts-list {
@@ -109,43 +110,17 @@ h3 {
 
 .skills-list {
     font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    li {
-        display: flex;
-        .skill-item {
-            width: 40%;
-        }
-        .skill-progress {
-            height: 22px;
-            width: 60%;
-            background: linear-gradient(
-                to right,
-                rgb(255, 255, 255) 58%,
-                rgb(241, 241, 241) 80%,
-                rgb(225, 225, 225) 100%,
-                rgb(246, 246, 246) 100%,
-                rgb(225, 225, 225) 100%
-            );
-            border: 1px solid;
-            border-radius: 2px;
-            .progress-bar {
-                border-radius: 1px 0 0 1px;
-                background: grey;
-                height: 100%;
-                &:hover {
-                    &.high {
-                        background: rgb(2, 156, 2);
-                    }
-                    &.medium {
-                        background: rgb(226, 185, 21);
-                    }
-                    &.low {
-                        background: rgb(209, 17, 17);
-                    }
-                }
-            }
+    margin: 0 30px;
+    .skill-item {
+        background: grey;
+        margin: 10px;
+        padding: 4px 8px;
+        line-height: 2.5;
+        border-radius: 3px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+            color: whitesmoke;
         }
     }
 }
@@ -242,6 +217,30 @@ h2 {
             font-weight: 600;
             letter-spacing: 1px;
             color: black;
+            display: flex;
+            gap: 35px;
+            height: fit-content;
+            @media (max-width: 899px) {
+                flex-direction: column;
+                gap: 7px;
+            }
+            .project-description {
+                position: relative;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 1.1;
+                @media (max-width: 899px) {
+                    padding-left: 5px;
+                }
+                &::before {
+                    content: "-";
+                    left: -12px;
+                    position: absolute;
+                    @media (max-width: 899px) {
+                        content: "";
+                    }
+                }
+            }
             &:hover {
                 opacity: 0.8;
             }
@@ -268,6 +267,12 @@ h2 {
         span {
             font-weight: 600;
             text-decoration: underline;
+            cursor: pointer;
+            display: inline-block;
+            &:hover {
+                transform: scale(1.05);
+                font-style: italic;
+            }
         }
     }
 }
