@@ -171,6 +171,7 @@ h3 {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  cursor: default;
 }
 
 .contacts-list {
@@ -206,43 +207,21 @@ h3 {
 
 .skills-list {
   font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  margin: 0 30px;
 }
 
-.skills-list li {
-  display: flex;
-}
-
-.skills-list li .skill-item {
-  width: 40%;
-}
-
-.skills-list li .skill-progress {
-  height: 22px;
-  width: 60%;
-  background: linear-gradient(to right, white 58%, #f1f1f1 80%, #e1e1e1 100%, #f6f6f6 100%, #e1e1e1 100%);
-  border: 1px solid;
-  border-radius: 2px;
-}
-
-.skills-list li .skill-progress .progress-bar {
-  border-radius: 1px 0 0 1px;
+.skills-list .skill-item {
   background: grey;
-  height: 100%;
+  margin: 10px;
+  padding: 4px 8px;
+  line-height: 2.5;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.skills-list li .skill-progress .progress-bar:hover.high {
-  background: #029c02;
-}
-
-.skills-list li .skill-progress .progress-bar:hover.medium {
-  background: #e2b915;
-}
-
-.skills-list li .skill-progress .progress-bar:hover.low {
-  background: #d11111;
+.skills-list .skill-item:hover {
+  color: whitesmoke;
 }
 
 .title {
@@ -353,6 +332,41 @@ h2 {
   font-weight: 600;
   letter-spacing: 1px;
   color: black;
+  display: flex;
+  gap: 35px;
+  height: fit-content;
+}
+
+@media (max-width: 899px) {
+  .projects .project-item a {
+    flex-direction: column;
+    gap: 7px;
+  }
+}
+
+.projects .project-item a .project-description {
+  position: relative;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+@media (max-width: 899px) {
+  .projects .project-item a .project-description {
+    padding-left: 5px;
+  }
+}
+
+.projects .project-item a .project-description::before {
+  content: "-";
+  left: -12px;
+  position: absolute;
+}
+
+@media (max-width: 899px) {
+  .projects .project-item a .project-description::before {
+    content: "";
+  }
 }
 
 .projects .project-item a:hover {
@@ -383,4 +397,11 @@ h2 {
 .languages li span {
   font-weight: 600;
   text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.languages li span:hover {
+  transform: scale(1.05);
+  font-style: italic;
 }
