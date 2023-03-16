@@ -1,0 +1,44 @@
+{
+  "title": {
+    "aboutTitle": "About Me",
+    "contactsTitle": "Contacts",
+    "skillsTitle": "Skills",
+    "languageTitle": "Language",
+    "educationTitle": "Education",
+    "projectsTitle": "My projects"
+  },
+  "about": "My name is Nadzeya Stashkevich. I was born in the Minsk city in 1994. In 2011, I received a school education, then entered the medical university. After graduating from university, I worked as a pediatrician. In 2021, I decided to change my specialization and become a web developer, I began to independently study the technologies for creating web pages and applications.",
+  "languages": {
+    "ru": "Russian",
+    "ruDescr": " - native language",
+    "en": "English"
+  },
+  "name": "Nadzeya Stashkevich",
+  "profession": "Web developer",
+  "education": [
+    {
+      "educationTitle": "Video tutorials on YouTube, online courses on Stepik.org",
+      "educationDate": "DEC 2021 - MAY 2022",
+      "educationText": "Web pages layout in HTML and CSS according to Figma layouts. SCSS and SASS preprocessors. Responsive web design, multimedia. Bootstrap library. Setting up VS Code plugins. Using DevTools. JS basics."
+    },
+    {
+      "educationTitle": "Rolling Scopes School, Pre-School (Stage#0)",
+      "educationDate": "JUN 2022 - SEP 2022",
+      "educationText": "RS School, JS/Frontend preparatory course. Stage #0: Markdown. Working with Git, GitHub. Chrome Dev Tools and VS Code. CSS Flex. Solving problems on Codewars. JS data types, algorithms, loops. Working with the DOM Webpack basics. NodeJS, NPM. Сreating projects on JS and Webpack."
+    },
+    {
+      "educationTitle": "Rolling Scopes School, JS/Frontend course (Stage#1-2)",
+      "educationDate": "SEP 2022 - FEB 2023",
+      "educationText": "RS School, JS/Frontend course. Stages #1-2: Git, GitHub. Responsive design, media queries, CSS Flex, SCSS. Algorithmic tasks, functions, Scope. Working with Figma HTML forms, DOM, DOM events. Modules in JS, WebPack. Server interaction. OOP, classes. Codewars. Interviews with mentors. Working with TypeScript, ESLint. Development UI components, creation of team projects."
+    }
+  ],
+  "projects": {
+    "TravelPortal": "travel planning website",
+    "Momentum": "widget for the Chrome browser, an analogue of the application of the same name",
+    "OnlineZoo": "website with information about animals from various zoos",
+    "GemPuzzle": "analogue of the classic game «Fifteen»",
+    "Songbird": "quiz app for recognizing birds by their voices",
+    "OnlineStore": "online store website, team project",
+    "TrelloClone": "analogue of the application of the same name for task management, team project"
+  }
+}
