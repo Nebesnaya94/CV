@@ -176,7 +176,7 @@ h2 {
     padding: 0 20px;
     margin-left: 30px;
     .education-item {
-        margin: 30px 0;
+        margin: 50px 0;
         .education-title {
             position: relative;
             letter-spacing: 1px;
@@ -275,4 +275,13 @@ h2 {
             }
         }
     }
+}
+
+.certificate-link {
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 3px 6px;
+    background: rgb(230, 230, 230);
 }

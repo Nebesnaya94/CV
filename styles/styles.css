@@ -287,7 +287,7 @@ h2 {
 }
 
 .education .education-item {
-  margin: 30px 0;
+  margin: 50px 0;
 }
 
 .education .education-item .education-title {
@@ -404,4 +404,13 @@ h2 {
 .languages li span:hover {
   transform: scale(1.05);
   font-style: italic;
+}
+
+.certificate-link {
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 3px 6px;
+  background: #e6e6e6;
 }
