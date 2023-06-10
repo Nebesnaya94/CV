@@ -5,80 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="icon" type="image/jpg" sizes="16x16" href="favicon.jpg" />
     <title>CV</title>
   </head>
   <body>
     <div class="wrapper">
       <section class="description">
+        <div class="button-wrapper">
+          <button class="ru">RU</button>
+          <button class="en">EN</button>
+        </div>
         <div class="avatar"></div>
         <div class="description-wrapper">
           <div class="description-item">
             <h3>Обо мне</h3>
-            <p>
-              Меня зовут Надежда Сташкевич. Я родилась в городе Минске в 1994
-              году. В 2011 году получила школьное образование, затем поступила в
-              медицинский университет. После окончания университета работала
-              детским врачом. В 2021 году я решила сменить специализацию и стать
-              веб-разработчиком, начала самостоятельно изучать технологии
-              создания веб-страниц и приложений.
+            <p class="text">
+              Меня зовут Надежда Сташкевич. Я начинающий front-end разработчик.
+              Закончила курсы от Rolling Scopes School (EPAM), имею практические
+              навыки верстки веб-страниц, создания front-end части сайтов на
+              Javascript/TypeScript, Angular. Работала с Webpack и Git.
+              Участвовала как в индивидуальной, так и командной разработке.
+              Продолжаю развивать свои навыки, планирую стать опытным
+              веб-разработчиком.
             </p>
           </div>
           <div class="description-item">
             <h3>Контакты</h3>
             <ul class="contacts-list">
               <li>
-                <a target="_blank" href="tel:+375291834890"
-                  ><img
+                <a target="_blank" href="tel:+375291834890">
+                  <img
                     style="transform: scale(0.9)"
                     class="contact-icon"
                     src="./assets/images/phone-icon.png"
                     alt="phone"
                   />
-                  +375 (29) 183-48-90</a
-                >
+                  +375 (29) 183-48-90
+                </a>
               </li>
               <li>
-                <a target="_blank" href="https://www.gmail.com/"
-                  ><img
+                <a target="_blank" href="https://www.gmail.com/">
+                  <img
                     class="contact-icon"
                     src="./assets/images/email-icon.png"
                     alt="email"
                   />
-                  kuroi.alice.13@gmail.com</a
-                >
+                  kuroi.alice.13@gmail.com
+                </a>
               </li>
               <li>
-                <a target="_blank" href="https://web.telegram.org/"
-                  ><img
+                <a target="_blank" href="https://web.telegram.org/">
+                  <img
                     class="contact-icon"
                     src="./assets/images/telegram-icon.png"
                     alt="telegram"
                   />
-                  https://t.me/nebesnaya94</a
-                >
+                  https://t.me/nebesnaya94
+                </a>
               </li>
               <li>
-                <a target="_blank" href="https://discord.com/"
-                  ><img
+                <a target="_blank" href="https://discord.com/">
+                  <img
                     class="contact-icon"
                     src="./assets/images/discord-icon.svg"
                     alt="discord"
                   />
-                  Nebesnaya#0470</a
-                >
+                  Nebesnaya#0470
+                </a>
               </li>
               <li>
                 <a
                   class="github-link"
                   target="_blank"
                   href="https://github.com/nebesnaya94/"
-                  ><img
+                >
+                  <img
                     class="contact-icon"
                     src="./assets/images/github-icon.png"
                     alt="github"
                   />
-                  https://github.com/nebesnaya94</a
-                >
+                  https://github.com/nebesnaya94
+                </a>
               </li>
             </ul>
           </div>
@@ -89,6 +96,7 @@
               <span class="skill-item">CSS&nbsp/&nbspSCSS</span>
               <span class="skill-item">JavaScript</span>
               <span class="skill-item">TypeScript</span>
+              <span class="skill-item">Angular</span>
               <span class="skill-item">Git&nbsp/&nbspGitHub</span>
               <span class="skill-item">Figma</span>
               <span class="skill-item">Webpack</span>
@@ -99,26 +107,32 @@
           <div class="description-item">
             <h3>Язык</h3>
             <ul class="languages">
-              <li><span>Русский</span> - родной язык</li>
-              <li><span>English</span> - A2</li>
+              <li>
+                <span class="underline text">Русский</span>
+                - <span class="text">родной язык</span>
+              </li>
+              <li>
+                <span class="underline text">English</span>
+                - B1
+              </li>
             </ul>
           </div>
         </div>
       </section>
       <section class="details">
         <div class="title">
-          <h1>Надежда Сташкевич</h1>
-          <h2>Web-разработчик</h2>
+          <h1 class="text">Надежда Сташкевич</h1>
+          <h2 class="text">Web-разработчик</h2>
         </div>
         <div class="details-item">
           <h3>Образование</h3>
           <ul class="education">
             <li class="education-item">
-              <div class="education-title">
+              <div class="education-title text">
                 Видеоуроки на YouTube, онлайн-курсы на Stepik.org
               </div>
-              <div class="education-date">ДЕК 2021 - МАЙ 2022</div>
-              <div class="education-text">
+              <div class="education-date text">ДЕК 2021 - МАЙ 2022</div>
+              <div class="education-text text">
                 Верстка веб-страниц на HTML и CSS по макетам Figma.
                 Препроцессоры SCSS и SASS. Адаптивный веб-дизайн, мультимедиа.
                 Библиотека Bootstrap. Настройка плагинов VS Code. Пользование
@@ -126,13 +140,11 @@
               </div>
             </li>
             <li class="education-item">
-              <div class="education-title">
+              <div class="education-title text">
                 Rolling Scopes School, Pre-School (Stage#0)
               </div>
-              <div class="education-date">ИЮН 2022 - СЕНТ 2022</div>
-              <div class="education-text">
-                RS School, подготовительный курс JS/Frontend. Этап #0:
-                <br />
+              <div class="education-date text">ИЮН 2022 - СЕНТ 2022</div>
+              <div class="education-text text">
                 Markdown. Работа с Git, GitHub. Chrome Dev Tools и VS Code. CSS
                 Flex. Решение задач на Codewars. Типы данных JS, алгоритмы,
                 циклы. Работа с DOM. Основы Webpack. NodeJS, NPM. Создание
@@ -142,17 +154,16 @@
                 target="_blank"
                 class="certificate-link"
                 href="https://app.rs.school/certificate/azqm0m3f"
-                >сертификат</a
               >
+                сертификат
+              </a>
             </li>
             <li class="education-item">
-              <div class="education-title">
+              <div class="education-title text">
                 Rolling Scopes School, курс JS/Frontend (Stage#1-2)
               </div>
-              <div class="education-date">СЕНТ 2022 - ФЕВ 2023</div>
-              <div class="education-text">
-                RS School, курс JS/Frontend. Этапы #1-2:
-                <br />
+              <div class="education-date text">СЕНТ 2022 - ФЕВ 2023</div>
+              <div class="education-text text">
                 Git, GitHub. Адаптивный дизайн, медиазапросы, CSS Flex, SCSS.
                 Алгоритмические задачи, функции, Scope. Работа с Figma. HTML
                 формы, DOM, DOM события. Модули в JS, WebPack. Взаимодействие с
@@ -164,8 +175,28 @@
                 target="_blank"
                 class="certificate-link"
                 href="https://app.rs.school/certificate/zih5hqbn"
-                >сертификат</a
               >
+                сертификат
+              </a>
+            </li>
+            <li class="education-item">
+              <div class="education-title text">
+                Rolling Scopes School, курс Angular (Stage#3)
+              </div>
+              <div class="education-date text">МАРТ 2023 - МАЙ 2023</div>
+              <div class="education-text text">
+                Создание проекта Angular, добавление ESLint, структура проекта.
+                Компоненты Angular, директивы и пайпы. Модули, роутинг. Сервисы.
+                Формы. RxJS, Observable, Subject. NgRx, Store. Использование
+                компонентов Material UI, PrimeNG. Создание командного проекта.
+              </div>
+              <a
+                target="_blank"
+                class="certificate-link"
+                href="https://app.rs.school/certificate/qivksp3o"
+              >
+                сертификат
+              </a>
             </li>
             <li class="education-item">
               <div class="education-title">...</div>
@@ -179,74 +210,92 @@
               <a
                 target="_blank"
                 href="https://nebesnaya94.github.io/travel-portal/travel/"
-                ><div>Travel&nbspportal</div>
-                <div class="project-description">
-                  сайт для планирования путешествий
-                </div></a
               >
+                <div>Travel&nbspportal</div>
+                <div class="project-description text">
+                  сайт для планирования путешествий
+                </div>
+              </a>
             </li>
             <li class="project-item">
               <a
                 target="_blank"
                 href="https://nebesnaya94.github.io/momentum/index"
-                ><div>Momentum</div>
-                <div class="project-description">
-                  виджет для браузера Chrome, аналог одноименного приложения
-                </div></a
               >
+                <div>Momentum</div>
+                <div class="project-description text">
+                  виджет для браузера Chrome, аналог одноименного приложения
+                </div>
+              </a>
             </li>
             <li class="project-item">
               <a
                 target="_blank"
                 href="https://rolling-scopes-school.github.io/nebesnaya94-JSFE2022Q3/online-zoo/pages/main/"
-                ><div>Online&nbspzoo</div>
-                <div class="project-description">
-                  сайт с информацией о животных из различных зоопарков
-                </div></a
               >
+                <div>Online&nbspzoo</div>
+                <div class="project-description text">
+                  сайт с информацией о животных из различных зоопарков
+                </div>
+              </a>
             </li>
             <li class="project-item">
               <a
                 target="_blank"
                 href="https://rolling-scopes-school.github.io/nebesnaya94-JSFE2022Q3/gem-puzzle/"
-                ><div>Gem&nbsppuzzle</div>
-                <div class="project-description">
-                  аналог классической игры "Пятнашки"
-                </div></a
               >
+                <div>Gem&nbsppuzzle</div>
+                <div class="project-description text">
+                  аналог классической игры "Пятнашки"
+                </div>
+              </a>
             </li>
             <li class="project-item">
               <a
                 target="_blank"
                 href="https://rolling-scopes-school.github.io/nebesnaya94-JSFE2022Q3/songbird/pages/"
-                ><div>Songbird</div>
-                <div class="project-description">
-                  приложение-викторина для распознавания птиц по их голосам
-                </div></a
               >
+                <div>Songbird</div>
+                <div class="project-description text">
+                  приложение-викторина для распознавания птиц по их голосам
+                </div>
+              </a>
             </li>
             <li class="project-item">
               <a
                 target="_blank"
                 href="https://stanislavmamulin-online-store-team.netlify.app/"
-                ><div>Online&nbspstore</div>
-                <div class="project-description">
-                  сайт интернет-магазина, командный проект
-                </div></a
               >
+                <div>Online&nbspstore</div>
+                <div class="project-description text">
+                  сайт интернет-магазина, командный проект
+                </div>
+              </a>
             </li>
             <li class="project-item">
-              <a target="_blank" href="https://rsclone-trello.netlify.app/login"
-                ><div>Trello&nbspclone</div>
-                <div class="project-description">
+              <a
+                target="_blank"
+                href="https://rsclone-trello.netlify.app/login"
+              >
+                <div>Trello&nbspclone</div>
+                <div class="project-description text">
                   аналог одноименного приложения для управления задачами,
                   командный проект
-                </div></a
-              >
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a target="_blank" href="https://airbetter.netlify.app/">
+                <div>Airbetter</div>
+                <div class="project-description text">
+                  сайт для бронирования авиабилетов, командный проект
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </section>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
