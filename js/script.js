@@ -14,7 +14,7 @@ for (let languageButton of languageButtons) {
 }
 
 function changeLanguage(lang) {
-  fetch(`https://nebesnaya94.github.io/CV/json/${lang}.json`)
+  fetch(`../json/${lang}.json`)
     .then((response) => response.json())
     .then((data) => {
       translate(title, data.titles);
@@ -24,7 +24,7 @@ function changeLanguage(lang) {
   buttonHighlight(lang);
 }
 
-function translate(target, text) {
+function translate(target, text, dt) {
   for (let i = 0; i < target.length; i++) {
     target[i].innerHTML = typeof text === "string" ? text : text[i];
   }

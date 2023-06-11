@@ -71,9 +71,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto/Roboto-BoldItalic.ttf");
+}
+
 body {
   background: rgba(0, 0, 0, 0.409);
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -130,6 +149,10 @@ body {
   font-size: 18px;
 }
 
+.description .description-wrapper .description-item p {
+  line-height: 1.4;
+}
+
 .details {
   width: 60%;
   background: whitesmoke;
@@ -148,24 +171,18 @@ body {
 }
 
 .avatar {
-  height: 300px;
+  height: 250px;
   width: 300px;
-  background: url("../assets/images/15919717061.jpg");
+  background: url("../assets/images/foto-cv.jpg");
+  background-position: 67%;
   background-size: cover;
-  margin: 0 auto;
-  border-radius: 50%;
+  margin: 25px auto;
+  border-radius: 2px;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 360px) {
   .avatar {
-    height: 250px;
-    width: 250px;
-  }
-}
-
-@media (max-width: 600px) {
-  .avatar {
-    height: 200px;
+    height: 170px;
     width: 200px;
   }
 }
@@ -173,7 +190,7 @@ body {
 h3 {
   margin-bottom: 20px;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   cursor: default;
@@ -221,7 +238,7 @@ h3 {
   padding: 4px 8px;
   line-height: 2.5;
   border-radius: 3px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -250,7 +267,7 @@ h3 {
 h1 {
   font-size: 50px;
   letter-spacing: 3px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -265,7 +282,7 @@ h2 {
   font-size: 30px;
   margin-top: 30px;
   letter-spacing: 3px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }
@@ -299,7 +316,7 @@ h2 {
   position: relative;
   letter-spacing: 1px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .education .education-item .education-title::before {
@@ -334,7 +351,7 @@ h2 {
   position: relative;
   height: 30px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   color: black;
   display: flex;
@@ -351,7 +368,7 @@ h2 {
 
 .projects .project-item a .project-description {
   position: relative;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
 }
@@ -400,7 +417,7 @@ h2 {
 }
 
 .languages li .underline {
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: underline;
   cursor: pointer;
   display: inline-block;
@@ -421,7 +438,7 @@ h2 {
 }
 
 .certificate-link:hover {
-  font-weight: 600;
+  font-weight: 700;
   background: #d0d0d0;
 }
 
@@ -445,6 +462,6 @@ h2 {
 }
 
 .button-wrapper button.active {
-  font-weight: 600;
+  font-weight: 700;
   background: grey;
 }
