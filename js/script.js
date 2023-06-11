@@ -24,7 +24,7 @@ function changeLanguage(lang) {
   buttonHighlight(lang);
 }
 
-function translate(target, text) {
+function translate(target, text, dt) {
   for (let i = 0; i < target.length; i++) {
     target[i].innerHTML = typeof text === "string" ? text : text[i];
   }
