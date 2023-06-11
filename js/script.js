@@ -14,7 +14,7 @@ for (let languageButton of languageButtons) {
 }
 
 function changeLanguage(lang) {
-  fetch(`../json/${lang}.json`)
+  fetch(`https://nebesnaya94.github.io/CV/json/${lang}.json`)
     .then((response) => response.json())
     .then((data) => {
       translate(title, data.titles);
