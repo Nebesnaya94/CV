@@ -78,6 +78,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
+  font-style: italic;
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto/Roboto-Italic.ttf");
+}
+
+@font-face {
   font-weight: 700;
   font-family: Roboto;
   src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
@@ -173,9 +180,7 @@ body {
 .avatar {
   height: 250px;
   width: 300px;
-  background: url("../assets/images/foto-cv.jpg");
-  background-position: 67%;
-  background-size: cover;
+  background: url("../assets/images/photo-cv.jpg") 67%/cover;
   margin: 25px auto;
   border-radius: 2px;
 }
@@ -312,14 +317,16 @@ h2 {
   margin: 50px 0;
 }
 
-.education .education-item .education-title {
+.education .education-item .education-title,
+.education .education-item .education-more {
   position: relative;
   letter-spacing: 1px;
   font-size: 20px;
   font-weight: 700;
 }
 
-.education .education-item .education-title::before {
+.education .education-item .education-title::before,
+.education .education-item .education-more::before {
   content: "";
   height: 12px;
   width: 12px;
@@ -334,7 +341,7 @@ h2 {
   margin: 10px 0;
 }
 
-.education .education-item .education-text {
+.education .education-item .education-description {
   font-size: 18px;
 }
 
@@ -397,12 +404,11 @@ h2 {
 
 .projects .project-item a::before {
   content: "";
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  background: black;
+  height: 20px;
+  width: 20px;
+  background: url("../assets/images/link-external.svg") no-repeat center/cover;
   top: 5px;
-  left: -60px;
+  left: -50px;
   position: absolute;
 }
 
@@ -430,11 +436,14 @@ h2 {
 
 .certificate-link {
   color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
   text-transform: uppercase;
   display: inline-block;
   margin-top: 10px;
   padding: 3px 6px;
   background: #e6e6e6;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
 }
 
 .certificate-link:hover {
