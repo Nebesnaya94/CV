@@ -1,7 +1,14 @@
 const languageButtons = document.querySelectorAll(".button-wrapper button");
 
 const title = document.querySelectorAll("h3");
-const content = document.querySelectorAll(".text");
+const about = document.querySelectorAll(".about");
+const languages = document.querySelectorAll(".lang");
+const educationTitles = document.querySelectorAll(".education-title");
+const educationDates = document.querySelectorAll(".education-date");
+const educationDescriptions = document.querySelectorAll(
+  ".education-description"
+);
+const projects = document.querySelectorAll(".project-description");
 const links = document.querySelectorAll(".certificate-link");
 
 changeLanguage("ru");
@@ -18,13 +25,18 @@ function changeLanguage(lang) {
     .then((response) => response.json())
     .then((data) => {
       translate(title, data.titles);
-      translate(content, data.content);
-      translate(links, data.links);
+      translate(about, data.about);
+      translate(languages, data.languages);
+      translate(educationTitles, data.education.titles);
+      translate(educationDates, data.education.dates);
+      translate(educationDescriptions, data.education.descriptions);
+      translate(projects, data.projects);
+      translate(links, data.education.links);
     });
   buttonHighlight(lang);
 }
 
-function translate(target, text, dt) {
+function translate(target, text) {
   for (let i = 0; i < target.length; i++) {
     target[i].innerHTML = typeof text === "string" ? text : text[i];
   }
