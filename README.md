@@ -1,3 +1,3 @@
 # CV
 
-**Deploy:**  https://angular-test-8ca84f.netlify.app/
+**Deploy:**  https://nebesnaya94.github.io/CV/
