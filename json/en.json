@@ -8,7 +8,7 @@
     "My projects"
   ],
   "about": [
-    "My name is Nadzeya Stashkevich. I am a junior Frontend developer. I completed courses at Rolling Scopes School (EPAM) and have practical skills in web page layout, creating the Frontend part of websites using JavaScript/TypeScript, and Angular. I have experience with Webpack and Git. I have worked both individually and in team development projects. I continue to improve my skills and plan to become an experienced web developer.",
+    "My name is Nadzeya Stashkevich. I am a Junior Frontend developer. I completed courses at Rolling Scopes School (EPAM) and have practical skills in web page layout, creating the Frontend part of websites using JavaScript/TypeScript, Angular and React. I have experience with Webpack and npm. I have worked in both individual and team development using the git version control system. I continue to improve my skills and plan to become an experienced web developer.",
     "Nadzeya Stashkevich",
     "Frontend developer"
   ],
@@ -42,7 +42,6 @@
     "quiz application for bird recognition based on their sounds",
     "E-commerce website, team project",
     "task management application, team project",
-    "client application using the YouTube API",
-    "flight booking website, team project"
+    "client application using the YouTube API"
   ]
 }
