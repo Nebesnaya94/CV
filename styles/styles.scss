@@ -1,0 +1,384 @@
+@import "reset.scss";
+
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto/Roboto-Italic.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto/Roboto-BoldItalic.ttf");
+}
+
+body {
+  background: rgba(0, 0, 0, 0.409);
+  font-family: Roboto, sans-serif;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  transition: 0.2s ease-in;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+  box-shadow: 0 20px 32px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  @media (max-width: 699px) {
+    flex-direction: column;
+  }
+}
+
+.description {
+  background: rgb(224, 212, 151);
+  width: 40%;
+  padding: 30px;
+  position: relative;
+
+  @media (max-width: 899px) {
+    width: 50%;
+  }
+
+  @media (max-width: 699px) {
+    width: 100%;
+  }
+
+  .description-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+
+    .description-item {
+      border-bottom: 2px solid;
+      padding: 50px 0;
+
+      p,
+      ul {
+        font-size: 18px;
+      }
+
+      p {
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+.details {
+  width: 60%;
+  background: whitesmoke;
+
+  @media (max-width: 899px) {
+    width: 50%;
+  }
+
+  @media (max-width: 699px) {
+    width: 100%;
+  }
+}
+
+.avatar {
+  height: 250px;
+  width: 250px;
+  background: url("../assets/images/photo-cv.jpg") center/cover;
+  margin: 25px auto;
+  border-radius: 50%;
+
+  @media (max-width: 360px) {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: default;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    a {
+      display: flex;
+      height: 30px;
+      align-items: center;
+      font-size: 18px;
+      color: black;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      .contact-icon {
+        width: 30px;
+        margin-right: 20px;
+        opacity: 0.7;
+      }
+
+      &.github-link {
+        @media (max-width: 370px) {
+          word-wrap: break-word;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}
+
+.skills-list {
+  font-size: 18px;
+  margin: 0 30px;
+
+  .skill-item {
+    background: grey;
+    margin: 10px;
+    padding: 4px 8px;
+    line-height: 2.5;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+}
+
+.title {
+  margin: 30px 0;
+  padding: 50px 0;
+  color: rgb(224, 212, 151);
+  background: rgba(0, 0, 0, 0.7);
+  height: 300px;
+
+  @media (max-width: 699px) {
+    margin: 0;
+    padding: 50px 0;
+    color: black;
+    background: whitesmoke;
+    height: auto;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-align: center;
+
+  @media (max-width: 699px) {
+    opacity: 0.8;
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 30px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 699px) {
+    opacity: 0.7;
+    font-size: 30px;
+  }
+}
+
+.details-item {
+  padding: 30px;
+
+  h3 {
+    border-bottom: 2px solid;
+  }
+}
+
+.education {
+  border-left: 4px solid;
+  padding: 0 20px;
+  margin-left: 30px;
+
+  .education-item {
+    margin: 50px 0;
+
+    .education-title,
+    .education-more {
+      position: relative;
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-weight: 700;
+
+      &::before {
+        content: "";
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background: black;
+        top: 6px;
+        left: -28px;
+        position: absolute;
+      }
+    }
+
+    .education-date {
+      margin: 10px 0;
+    }
+
+    .education-description {
+      font-size: 18px;
+    }
+  }
+}
+
+.projects {
+  padding: 20px 0;
+  margin-left: 87px;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .project-item {
+    a {
+      position: relative;
+      height: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: black;
+      display: flex;
+      gap: 35px;
+      height: fit-content;
+
+      @media (max-width: 899px) {
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .project-description {
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.1;
+
+        @media (max-width: 899px) {
+          padding-left: 5px;
+        }
+
+        &::before {
+          content: "-";
+          left: -12px;
+          position: absolute;
+          @media (max-width: 899px) {
+            content: "";
+          }
+        }
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &::before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        background: url("../assets/images/link-external.svg") no-repeat
+          center/cover;
+        top: 5px;
+        left: -50px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.languages {
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    .underline {
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+      display: inline-block;
+
+      &:hover {
+        transform: scale(1.05);
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.certificate-link {
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 3px 6px;
+  background: rgb(230, 230, 230);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+
+  &:hover {
+    font-weight: 700;
+    background: rgb(208, 208, 208);
+  }
+}
+
+.button-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  button {
+    padding: 4px 6px;
+    margin: 0 3px;
+    font-size: 20px;
+    border-radius: 4px;
+    background: rgba(128, 128, 128, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+
+    &:hover {
+      color: white;
+    }
+
+    &.active {
+      font-weight: 700;
+      background: grey;
+    }
+  }
+}
