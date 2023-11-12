@@ -10,6 +10,7 @@ const educationDescriptions = document.querySelectorAll(
 );
 const projects = document.querySelectorAll(".project-description");
 const links = document.querySelectorAll(".certificate-link");
+const address = document.querySelectorAll(".address");
 
 changeLanguage("ru");
 
@@ -32,6 +33,7 @@ function changeLanguage(lang) {
       translate(educationDescriptions, data.education.descriptions);
       translate(projects, data.projects);
       translate(links, data.education.links);
+      translate(address, data.address);
     });
   buttonHighlight(lang);
 }
